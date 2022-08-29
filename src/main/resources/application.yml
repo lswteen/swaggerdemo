@@ -1,0 +1,23 @@
+server:
+  port: 8888
+  error:
+    include-message: always
+    include-binding-errors: always
+    include-stacktrace: never
+    include-exception: false
+
+spring:
+  application:
+    name: demo-api-application
+
+logging:
+  level:
+    org.springframework.boot.autoconfigure: info
+
+springdoc:
+  swagger-ui:
+    path: /sample/swagger-ui.html
+    displayRequestDuration: true
+    operationsSorter: method
+    apisSorter: alpha
+  default-produces-media-type: application/json
